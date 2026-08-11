@@ -4,8 +4,10 @@
 @import 'tailwindcss/utilities';
 
 body {
-  font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif !important; /* impeccable-disable-line overused-font -- HAWKS identity font */
 }
+
+@import 'shared/assets/styles/hawks';
 
 @layer base {
   // FIXME: Use a common color file for all packs
