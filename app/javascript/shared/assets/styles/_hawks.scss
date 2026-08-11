@@ -1,0 +1,139 @@
+:root {
+  --hawks-ink: #080808;
+  --hawks-ink-soft: #141311;
+  --hawks-paper: #f5f0e7;
+  --hawks-paper-deep: #e1d7c7;
+  --hawks-orange: #f2610a;
+  --hawks-orange-deep: #c84a04;
+  --hawks-signal: #f4a064;
+  --hawks-muted: #b9b0a4;
+
+  --slate-1: 253 251 247;
+  --slate-2: 250 247 240;
+  --slate-3: 245 240 231;
+  --slate-4: 225 215 199;
+  --slate-5: 214 202 184;
+  --slate-6: 198 184 164;
+  --slate-7: 185 176 164;
+  --slate-8: 158 148 136;
+  --slate-9: 125 116 107;
+  --slate-10: 103 95 87;
+  --slate-11: 78 73 67;
+  --slate-12: 8 8 8;
+
+  --background-color: 245 240 231;
+  --surface-1: 250 247 240;
+  --surface-2: 255 252 246;
+  --surface-active: 255 243 229;
+  --background-input-box: 8, 8, 8, 0.035;
+  --border-container: 8, 8, 8, 0.17;
+  --border-strong: 198 184 164;
+  --border-weak: 225 215 199;
+  --card-color: 255 252 246;
+  --alpha-1: 8, 8, 8, 0.06;
+  --alpha-2: 8, 8, 8, 0.04;
+  --alpha-3: 255, 252, 246, 0.96;
+  --black-alpha-1: 8, 8, 8, 0.17;
+  --black-alpha-2: 8, 8, 8, 0.04;
+  --border-blue: 242, 97, 10, 0.5;
+}
+
+.dark {
+  --slate-1: 20 19 17;
+  --slate-2: 24 23 20;
+  --slate-3: 32 30 26;
+  --slate-4: 47 43 37;
+  --slate-5: 61 55 47;
+  --slate-6: 82 73 62;
+  --slate-7: 105 94 80;
+  --slate-8: 133 119 100;
+  --slate-9: 158 145 126;
+  --slate-10: 185 176 164;
+  --slate-11: 225 215 199;
+  --slate-12: 245 240 231;
+
+  --background-color: 8 8 8;
+  --surface-1: 20 19 17;
+  --surface-2: 24 23 20;
+  --surface-active: 58 39 25;
+  --background-input-box: 245, 240, 231, 0.04;
+  --border-container: 245, 240, 231, 0.15;
+  --border-strong: 82 73 62;
+  --border-weak: 47 43 37;
+  --card-color: 20 19 17;
+  --alpha-1: 245, 240, 231, 0.1;
+  --alpha-2: 245, 240, 231, 0.08;
+  --alpha-3: 20, 19, 17, 0.95;
+  --black-alpha-1: 0, 0, 0, 0.4;
+  --black-alpha-2: 0, 0, 0, 0.2;
+  --border-blue: 242, 97, 10, 0.5;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif !important; /* impeccable-disable-line overused-font -- HAWKS identity font */
+}
+
+::selection {
+  background: var(--hawks-orange);
+  color: var(--hawks-ink);
+}
+
+.hawks-auth-shell {
+  background-color: var(--hawks-paper) !important;
+  color: var(--hawks-ink);
+}
+
+.hawks-auth-signup {
+  background-image: none !important;
+}
+
+.dark .hawks-auth-shell {
+  background-color: var(--hawks-ink) !important;
+  color: var(--hawks-paper);
+}
+
+.hawks-auth-card {
+  background: var(--hawks-paper) !important;
+  border: 1px solid rgba(8, 8, 8, 0.17);
+  border-radius: 0.75rem !important;
+  box-shadow: 0 18px 45px rgba(8, 8, 8, 0.08) !important;
+}
+
+.dark .hawks-auth-card {
+  background: var(--hawks-ink-soft) !important;
+  border-color: rgba(245, 240, 231, 0.15);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3) !important;
+}
+
+.hawks-auth-shell button[type='submit'] {
+  background: var(--hawks-orange) !important;
+  color: var(--hawks-ink) !important;
+  border-radius: 0.4rem !important;
+  box-shadow: none !important;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.hawks-auth-shell button[type='submit']:hover {
+  background: var(--hawks-orange-deep) !important;
+  transform: translateY(-1px);
+}
+
+.hawks-auth-shell input:focus {
+  --tw-ring-color: var(--hawks-orange) !important;
+  border-color: var(--hawks-orange) !important;
+}
+
+.text-link {
+  color: var(--hawks-orange) !important;
+}
+
+.text-link:hover {
+  color: var(--hawks-orange-deep) !important;
+}
