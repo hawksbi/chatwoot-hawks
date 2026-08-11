@@ -25,7 +25,7 @@ const resizeContainers = () => {
 
 <template>
   <div
-    class="relative w-full h-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat p-4"
+    class="hawks-auth-shell hawks-auth-signup relative w-full h-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat p-4"
     :style="{ backgroundImage: `url(${signupBg})` }"
   >
     <div
@@ -33,7 +33,7 @@ const resizeContainers = () => {
     />
     <div
       v-show="!isLoading"
-      class="relative flex max-w-[960px] bg-white dark:bg-n-solid-2 rounded-lg outline outline-1 outline-n-container shadow-sm"
+      class="hawks-auth-card relative flex max-w-[960px] bg-white dark:bg-n-solid-2 rounded-lg outline outline-1 outline-n-container shadow-sm"
       :class="{ 'w-auto xl:w-full': isAChatwootInstance }"
     >
       <div class="flex-1 flex items-center justify-center py-10 px-10">
