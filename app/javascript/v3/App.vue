@@ -56,11 +56,11 @@ export default {
 @tailwind utilities;
 
 @import '../dashboard/assets/scss/next-colors';
+@import 'shared/assets/styles/hawks';
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif; /* impeccable-disable-line overused-font -- HAWKS identity font */
   @apply h-full w-full;
 
   input,
